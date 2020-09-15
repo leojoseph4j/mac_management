@@ -1,0 +1,20 @@
+{
+  "name": "mac_management_tool",
+  "version": "1.0.0",
+  "description": "This tool manages and keep a record of all laptops assigned to Employees",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "server": "node server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.4"
+  }
+}
